@@ -68,6 +68,6 @@ php wp-cli.phar wc update
 ### Delete Trashed Products
 
 ```
-php wp-cli.phar post delete $(wp post list --post_status=trash --post_type='product' --format=ids)
+php wp-cli.phar post delete $(php wp-cli.phar post list --post_status=trash --post_type='product' --format=ids)
 ```
 
