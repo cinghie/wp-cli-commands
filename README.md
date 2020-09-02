@@ -2,6 +2,8 @@
 
 ## Guides
 
+Install: https://github.com/wp-cli/wp-cli#installing
+Commands: https://github.com/wp-cli/entity-command  
 
 ## Wordpress
 
@@ -68,6 +70,6 @@ php wp-cli.phar wc update
 ### Delete Trashed Products
 
 ```
-php wp-cli.phar post delete $(php wp-cli.phar post list --post_status=trash --post_type='product' --format=ids)
+php wp-cli.phar post delete --force $(php wp-cli.phar post list --post_status=trash --post_type='product' --posts_per_page=1000 --format=ids)
 ```
 
