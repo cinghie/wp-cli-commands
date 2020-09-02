@@ -67,9 +67,15 @@ https://www.liquidweb.com/kb/image-optimizer-package-wp-cli/
 php wp-cli.phar wc update
 ```
 
+### Delete Draft Products
+
+```
+php wp-cli.phar post delete --force $(php wp-cli.phar post list --post_status=draft --post_type='product' --posts_per_page=5000 --format=ids)
+```
+
 ### Delete Trashed Products
 
 ```
-php wp-cli.phar post delete --force $(php wp-cli.phar post list --post_status=trash --post_type='product' --posts_per_page=1000 --format=ids)
+php wp-cli.phar post delete --force $(php wp-cli.phar post list --post_status=trash --post_type='product' --posts_per_page=5000 --format=ids)
 ```
 
