@@ -59,9 +59,15 @@ https://www.liquidweb.com/kb/image-optimizer-package-wp-cli/
 
 ## Woocommerce
 
-### Woocommerce Update Database
+### Update Database
 
 ```
 php wp-cli.phar wc update
+```
+
+### Delete Trashed Products
+
+```
+php wp-cli.phar post delete $(wp post list --post_status=trash --post_type='product' --format=ids)
 ```
 
