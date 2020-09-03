@@ -29,6 +29,12 @@ php wp-cli.phar theme install twentytwenty --activate
 php wp-cli.phar theme list
 ```
 
+### Yoast Index
+
+```
+php wp yoast index
+```
+
 ### Optimizing Site Images
 
 ```
