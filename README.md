@@ -32,7 +32,7 @@ php wp-cli.phar theme list
 ### Yoast Index
 
 ```
-php wp yoast index
+php wp-cli.phar yoast index
 ```
 
 ### Optimizing Site Images
