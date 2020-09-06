@@ -2,7 +2,7 @@
 
 ## Guides
 
-Install: https://github.com/wp-cli/wp-cli#installing
+Install: https://github.com/wp-cli/wp-cli#installing  
 Commands: https://github.com/wp-cli/entity-command  
 
 ### Install plugin
