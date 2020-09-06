@@ -1,4 +1,4 @@
-# php wp-cli.phar CLI Useful Commands
+# Wordpress CLI Useful Commands
 
 ## Guides
 
