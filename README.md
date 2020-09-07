@@ -5,6 +5,12 @@
 Install: https://github.com/wp-cli/wp-cli#installing  
 Commands: https://github.com/wp-cli/entity-command  
 
+## Update WP Cli
+
+```
+php wp-cli.phar cli update
+```
+
 ### Install plugin
 
 ```
