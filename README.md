@@ -4,6 +4,7 @@
 
 Install: https://github.com/wp-cli/wp-cli#installing  
 Commands: https://github.com/wp-cli/entity-command  
+Woocommerce: https://github.com/woocommerce/woocommerce/wiki/WC-CLI-Overview  
 
 ## Update WP Cli
 
@@ -77,14 +78,38 @@ https://www.liquidweb.com/kb/image-optimizer-package-wp-cli/
 php wp-cli.phar wc update
 ```
 
+## List Products with Status
+
+```
+php wp-cli.phar wc product list --status=trash --user=admin_username --per_page=100 --format=ids
+```
+
+## List Products in Category
+
+```
+php wp-cli.phar wc product list --category=category_id --user=admin_username --per_page=100 --format=ids
+```
+
+## List Products in Category with status
+
+```
+php wp-cli.phar wc product list --status=status --category=category_id --user=admin_username --per_page=100 --format=ids
+```
+
+## Delete Products in Category
+
+```
+php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --category=category_id --per_page=100 --format=ids)
+```
+
 ### Delete Draft Products
 
 ```
-php wp-cli.phar post delete --force $(php wp-cli.phar post list --post_status=draft --post_type='product' --posts_per_page=5000 --format=ids)
+php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --status=draft --user=admin_username --per_page=100 --format=ids)
 ```
 
 ### Delete Trashed Products
 
 ```
-php wp-cli.phar post delete --force $(php wp-cli.phar post list --post_status=trash --post_type='product' --posts_per_page=5000 --format=ids)
+php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --status=trash --user=admin_username --per_page=100 --format=ids)
 ```
