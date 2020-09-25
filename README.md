@@ -67,10 +67,6 @@ php wp-cli.phar image-optimize restore 123
 php wp-cli.phar media regenerate 123
 ```
 
-```
-php wp-cli.phar yoast index
-```
-
 https://www.liquidweb.com/kb/image-optimizer-package-wp-cli/  
 
 ## Woocommerce
