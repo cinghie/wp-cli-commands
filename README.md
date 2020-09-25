@@ -78,25 +78,31 @@ https://www.liquidweb.com/kb/image-optimizer-package-wp-cli/
 php wp-cli.phar wc update
 ```
 
-## List Products with Status
+### List Products with Status
 
 ```
 php wp-cli.phar wc product list --status=trash --user=admin_username --per_page=100 --format=ids
 ```
 
-## List Products in Category
+### List Products in Category
 
 ```
 php wp-cli.phar wc product list --category=category_id --user=admin_username --per_page=100 --format=ids
 ```
 
-## List Products in Category with status
+### List Products in Category with status
 
 ```
 php wp-cli.phar wc product list --status=status --category=category_id --user=admin_username --per_page=100 --format=ids
 ```
 
-## Delete Products in Category
+### Count Products in Category
+
+```
+php wp-cli.phar wc product list --category=category_id --user=admin_username --format=count
+```
+
+### Delete Products in Category
 
 ```
 php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --category=category_id --per_page=100 --format=ids)
