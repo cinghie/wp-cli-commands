@@ -123,6 +123,6 @@ php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --status=t
 ### Action Scheduler Run
 
 ```
-action-scheduler run
+php wp-cli.phar action-scheduler run
 ```
 
