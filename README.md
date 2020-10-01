@@ -119,3 +119,10 @@ php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --status=d
 ```
 php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --status=trash --user=admin_username --per_page=100 --format=ids)
 ```
+
+### Action Scheduler Run
+
+```
+action-scheduler run
+```
+
