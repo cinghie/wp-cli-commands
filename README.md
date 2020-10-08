@@ -78,7 +78,7 @@ https://www.liquidweb.com/kb/image-optimizer-package-wp-cli/
 php wp-cli.phar wc update
 ```
 
-### List Products with Status
+### List Products in Status
 
 ```
 php wp-cli.phar wc product list --status=trash --user=admin_username --per_page=100 --format=ids
@@ -90,10 +90,29 @@ php wp-cli.phar wc product list --status=trash --user=admin_username --per_page=
 php wp-cli.phar wc product list --category=category_id --user=admin_username --per_page=100 --format=ids
 ```
 
-### List Products in Category with status
+### List Products in Category in Status
 
 ```
 php wp-cli.phar wc product list --status=status --category=category_id --user=admin_username --per_page=100 --format=ids
+```
+
+
+### List Orders after Date
+
+```
+php wp-cli.phar wc shop_order list --after="2020-10-07T23:59:59" --user=admin_username --per_page=100 --format=ids
+```
+
+### List Orders before Date
+
+```
+php wp-cli.phar wc shop_order list --before="2020-10-07T23:59:59" --user=admin_username --per_page=100 --format=ids
+```
+
+### List Orders between Date
+
+```
+php wp-cli.phar wc shop_order list --after="2020-10-01T00:00:00" --before="2020-10-31T23:59:59" --user=admin_username --per_page=100 --format=ids
 ```
 
 ### Count Products in Category
@@ -108,13 +127,13 @@ php wp-cli.phar wc product list --category=category_id --user=admin_username --f
 php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --category=category_id --per_page=100 --format=ids)
 ```
 
-### Delete Draft Products
+### Delete Products in Status draft
 
 ```
 php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --status=draft --user=admin_username --per_page=100 --format=ids)
 ```
 
-### Delete Trashed Products
+### Delete Products in Status trash
 
 ```
 php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --status=trash --user=admin_username --per_page=100 --format=ids)
