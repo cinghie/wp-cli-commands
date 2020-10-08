@@ -115,6 +115,12 @@ php wp-cli.phar wc shop_order list --before="2020-10-07T23:59:59" --user=admin_u
 php wp-cli.phar wc shop_order list --after="2020-10-01T00:00:00" --before="2020-10-31T23:59:59" --user=admin_username --per_page=100 --format=ids
 ```
 
+### Export Orders after Date
+
+```
+php wp-cli.phar wc shop_order list --after="2020-10-01T00:00:00" --user=username --format=csv > orders_2020_10.csv
+```
+
 ### Count Products in Category
 
 ```
