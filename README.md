@@ -127,6 +127,18 @@ php wp-cli.phar wc shop_order list --after="2020-10-01T00:00:00" --user=username
 php wp-cli.phar wc product list --category=category_id --user=admin_username --format=count
 ```
 
+### Count Products In Stock
+
+```
+php wp-cli.phar wc product list --in_stock=true --user=admin_username --format=count
+```
+
+### Count Products Out of Stock
+
+```
+php wp-cli.phar wc product list --in_stock=false --user=admin_username --format=count
+```
+
 ### Delete Products in Category
 
 ```
