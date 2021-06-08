@@ -42,6 +42,16 @@ php wp-cli.phar theme list
 php wp-cli.phar yoast index
 ```
 
+### Transient
+
+```
+php wp-cli.phar transient delete --expired
+```
+
+```
+php wp-cli.phar transient delete --all
+```
+
 ### Optimizing Site Images
 
 ```
