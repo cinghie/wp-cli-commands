@@ -46,6 +46,8 @@ php wp-cli.phar yoast index
 php wp-cli.phar yoast index --reindex
 ```
 
+https://developer.yoast.com/features/wp-cli/reindex-indexables/
+
 ### Transient
 
 ```
