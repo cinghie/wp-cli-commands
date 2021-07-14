@@ -36,18 +36,6 @@ php wp-cli.phar theme install twentytwenty --activate
 php wp-cli.phar theme list
 ```
 
-### Yoast Index
-
-```
-php wp-cli.phar yoast index
-```
-
-```
-php wp-cli.phar yoast index --reindex
-```
-
-https://developer.yoast.com/features/wp-cli/reindex-indexables/
-
 ### Transient
 
 ```
@@ -85,6 +73,33 @@ php wp-cli.phar media regenerate 123
 ```
 
 https://www.liquidweb.com/kb/image-optimizer-package-wp-cli/  
+
+
+### Yoast Index
+
+```
+php wp-cli.phar yoast index
+```
+
+```
+php wp-cli.phar yoast index --reindex
+```
+
+https://developer.yoast.com/features/wp-cli/reindex-indexables/
+
+
+### W3 Total Cache
+
+```
+wp plugin status w3-total-cache
+```
+
+```
+wp w3-total-cache flush all
+```
+
+https://developer.yoast.com/features/wp-cli/reindex-indexables/
+
 
 ## Woocommerce
 
