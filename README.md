@@ -91,11 +91,11 @@ https://developer.yoast.com/features/wp-cli/reindex-indexables/
 ### W3 Total Cache
 
 ```
-wp plugin status w3-total-cache
+php wp-cli.phar plugin status w3-total-cache
 ```
 
 ```
-wp w3-total-cache flush all
+php wp-cli.phar w3-total-cache flush all
 ```
 
 https://developer.yoast.com/features/wp-cli/reindex-indexables/
