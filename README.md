@@ -42,6 +42,10 @@ php wp-cli.phar theme list
 php wp-cli.phar yoast index
 ```
 
+```
+php wp-cli.phar yoast index --reindex
+```
+
 ### Transient
 
 ```
