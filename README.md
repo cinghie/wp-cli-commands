@@ -40,6 +40,7 @@ php wp-cli.phar theme list
 
 ```
 php wp-cli.phar term recount category
+php wp-cli.phar term recount product_cat
 php wp-cli.phar term recount post_tag
 php wp-cli.phar term recount category post_tag
 ```
