@@ -36,6 +36,14 @@ php wp-cli.phar theme install twentytwenty --activate
 php wp-cli.phar theme list
 ```
 
+### Recount Terms
+
+```
+wp term recount category
+wp term recount post_tag
+wp term recount category post_tag
+```
+
 ### Transient
 
 ```
