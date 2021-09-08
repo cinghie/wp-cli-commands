@@ -39,9 +39,9 @@ php wp-cli.phar theme list
 ### Recount Terms
 
 ```
-wp term recount category
-wp term recount post_tag
-wp term recount category post_tag
+php wp-cli.phar term recount category
+php wp-cli.phar term recount post_tag
+php wp-cli.phar term recount category post_tag
 ```
 
 ### Transient
