@@ -179,10 +179,16 @@ php wp-cli.phar wc product list --in_stock=true --user=admin_username --format=c
 php wp-cli.phar wc product list --in_stock=false --user=admin_username --format=count
 ```
 
+### Delete All Products
+
+```
+php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --user=admin_username --per_page=100 --format=ids)
+```
+
 ### Delete Products in Category
 
 ```
-php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --category=category_id --per_page=100 --format=ids)
+php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --category=category_id --user=admin_username --per_page=100 --format=ids)
 ```
 
 ### Delete Products in Status draft
