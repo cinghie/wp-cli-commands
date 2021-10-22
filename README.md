@@ -86,8 +86,6 @@ https://www.liquidweb.com/kb/image-optimizer-package-wp-cli/
 
 ### Yoast Index
 
-https://developer.yoast.com/features/wp-cli/reindex-indexables/
-
 ```
 php wp-cli.phar yoast index
 ```
