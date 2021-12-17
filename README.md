@@ -203,6 +203,11 @@ php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --status=d
 php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --status=trash --user=admin_username --per_page=100 --format=ids)
 ```
 
+### Delete Products Out of Stock
+
+```
+php wp-cli.phar post delete --force $(php wp-cli.phar wc product list --in_stock=true --user=admin_username --per_page=100 --format=ids)
+```
 
 ## Scheduler
 
