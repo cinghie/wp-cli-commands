@@ -6,6 +6,12 @@ Install: https://github.com/wp-cli/wp-cli#installing
 Commands: https://github.com/wp-cli/entity-command  
 Woocommerce: https://github.com/woocommerce/woocommerce/wiki/WC-CLI-Overview  
 
+## Install WP Cli
+
+```
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+```
+
 ## Update WP Cli
 
 ```
