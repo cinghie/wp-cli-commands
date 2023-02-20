@@ -18,6 +18,12 @@ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.pha
 php wp-cli.phar cli update
 ```
 
+## Update WP Database
+
+```
+php wp-cli.phar core update-db
+```
+
 ### Flushes rewrite rules
 
 ```
