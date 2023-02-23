@@ -136,6 +136,12 @@ https://developer.yoast.com/features/wp-cli/reindex-indexables/
 php wp-cli.phar wc update
 ```
 
+### Run Scheduler
+
+```
+php wp-cli.phar action-scheduler run
+```
+
 ### List Products in Status
 
 ```
